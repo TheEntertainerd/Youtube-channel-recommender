@@ -2,6 +2,13 @@
 
 A recommendation system for discovering YouTube channels. 
 
+<p align="center">
+  <img width="465" alt="Screenshot of YouTube Channel Recommender App" src="https://github.com/user-attachments/assets/0481cdfa-79e8-4a62-8d36-2f3803786ed4" />
+</p>
+
+<p align="center"><i>Screenshot: Example interface of the Dash webapp</i></p>
+
+
 ## Features
 
 ### Embeddings
