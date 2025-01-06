@@ -90,7 +90,7 @@ python create_annoy_index.py
 
 #### Option B: Use existing data (200k+ Subscribers)
 
-1. Download the pre-processed data package from [Google Drive Link]
+1. Download the pre-processed data package from [Google Drive Link](https://drive.google.com/file/d/1fvpNyhu2ta98_UlM5yw-Z6g27NawGySj/view?usp=drive_link)
 2. Extract the contents directly to the project root
 3. Verify the following files are present:
    - `embeddings/` folder with around 40000 embeddings
