@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  dash:
+    build:
+      context: .
+      dockerfile: dash/Dockerfile
+    ports:
+      - "8050:8050"
+    depends_on:
+      - flask
+    environment:
+      - FLASK_SERVER=http://flask:5000
+    networks:
+      - youtube-recommender
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  flask:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./embeddings:/app/embeddings
+      - ./secrets.json:/app/secrets.json
+    networks:
+      - youtube-recommender
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  youtube-recommender:
+    driver: bridge

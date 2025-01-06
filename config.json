@@ -1,0 +1,21 @@
+{
+    "files": {
+        "youtube_csv": "youtube.csv",
+        "youtube_csv_small": "youtube_small.csv",
+        "index_file": "index.ann",
+        "channel_id_map": "channel_id_map.json",
+        "secrets_file": "secrets.json"
+    },
+    "folders":{
+        "embeddings_dir": "embeddings"
+    },
+    "video_processing": {
+        "limit_words_video_subtitles": 100,
+        "limit_char_video_description": 200,
+        "nb_videos_to_use": 3
+    },
+    "models": {
+        "completion": "gpt-4o-mini",
+        "embedding": "text-embedding-3-small"
+    }
+}

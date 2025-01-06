@@ -1,0 +1,7 @@
+secrets.json
+*.csv
+*.zip
+embeddings/
+*.ann
+channel_id_map.json
+__pycache__/
